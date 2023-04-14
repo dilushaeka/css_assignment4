@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        section{
+            width: 200px;
+            border-radius: 50%;
+            aspect-ratio: 1/1;
+            background-color: darkgray;
+            /*border: 10px solid white;
+            border-top-color: red;*/
+
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+        section>h1{
+            width: max-content;
+            height: max-content;
+            color: white;
+
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+        section::before{
+            content: " ";
+
+
+            border-radius: 50%;
+            border: 10px solid white;
+            border-top-color: red;
+
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+
+
+        }
+
+        section:hover::before{
+            transform: rotate(360deg);
+            transition-duration: 4s;
+        }
+
+        span{
+            position: absolute;
+        }
+    </style>
+</head>
+<body style="background-color: #5e0fbe">
+<section>
+    <h1>RWAD</h1>
+</section>
+
+</body>
+</html>
